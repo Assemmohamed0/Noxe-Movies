@@ -1,0 +1,17 @@
+<div class="container my-5">
+    <div class="row">
+
+        <div *ngFor="let myArr of tvArr" class="col-md-3">
+            <div class="movie my-3">
+                <img [src]="imgPath+myArr.poster_path" class="img-fluid" alt="">
+                <div class="layer p-2 text-light text-center">
+                    <h4 class="font-weight-bold">{{myArr.original_name}}</h4>
+                    <p>{{myArr.overview}}</p>
+                    <p>{{myArr.vote_average}}</p>
+                    <h6>{{myArr.first_air_date}}</h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

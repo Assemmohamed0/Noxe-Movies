@@ -1,0 +1,19 @@
+.movie
+{
+    position: relative;
+    overflow: hidden;
+}
+.layer
+{
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+.movie:hover .layer
+{
+    top: 0;
+}

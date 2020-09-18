@@ -1,0 +1,18 @@
+<div class="container my-5">
+    <div class="row">
+
+        <div *ngFor="let myArr of peopleArr" class="col-md-3">
+            <div class="movie my-3">
+                <img [src]="imgPath+myArr.profile_path" class="img-fluid" alt="">
+                <div class="layer p-2 text-light text-center">
+                    <h4 class="font-weight-bold">{{myArr.name}}</h4>
+                    <p>{{myArr.known_for_department}}</p>
+                    <ul class="text-left">
+                        <li *ngFor="let knownFor of myArr.known_for ;index as i">{{myArr.known_for[i].title}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

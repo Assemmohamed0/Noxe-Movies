@@ -1,0 +1,26 @@
+input
+{
+    border-top:0;
+    border-bottom: 1px solid black !important;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    outline: none;
+    margin: 20px 0px;
+    padding-left: 30px;
+}
+input:focus
+{
+    box-shadow: none !important;
+}
+.form-group
+{
+    position: relative;
+}
+i
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
